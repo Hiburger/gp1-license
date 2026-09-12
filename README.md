@@ -23,11 +23,12 @@ Embed rights directly into your image EXIF metadata using [ExifTool](https://exi
 
 ```bash
 # Tag a single photo
-exiftool -Copyright="GP1 License ([https://github.com/Hiburger/gp1-license](https://github.com/Hiburger/gp1-license))" -Artist="Your Name" -overwrite_original image.jpg
+exiftool -Copyright="GP1 License (https://github.com/Hiburger/gp1-license)" -Artist="Your Name" -overwrite_original image.jpg
 
 # Tag an entire folder
-exiftool -Copyright="GP1 License ([https://github.com/Hiburger/gp1-license](https://github.com/Hiburger/gp1-license))" -Artist="Your Name" -overwrite_original ./path/to/folder
+exiftool -Copyright="GP1 License (https://github.com/Hiburger/gp1-license)" -Artist="Your Name" -overwrite_original ./path/to/folder
 ```
+
 ---
 
 ## Frequently Asked Questions
@@ -78,4 +79,20 @@ Standard legacy licenses (like Creative Commons v4.0) were written before genera
 
 - #### What should I do if a web platform automatically strips EXIF metadata?
 If a platform strips metadata upon upload, ensure you provide visible attribution in the post text, caption, or page footer to remain compliant with Section 2.3.
+</details>
+
+<details>
+<summary><b>What happens if a platform's Terms of Service conflicts with GP1?</b></summary>
+<br>
+
+#### Platform ToS vs. GP1 Scope
+When you upload content to a platform, your direct user agreement with that platform governs how the platform itself operates. GP1 governs **third-party users and scrapers** who access, download, or attempt to re-use your work. While GP1 cannot override a platform ToS you directly agreed to, it prevents external companies and scrapers from taking your work off that platform for unauthorized AI training or commercial use.
+</details>
+
+<details>
+<summary><b>Am I protected if I upload a GP1 photo to a site that strips EXIF data?</b></summary>
+<br>
+
+#### Native Platform Compression
+Yes. Section 2.3 explicitly exempts standard automated processing by host platforms. As long as you include a caption link, profile handle (`@handle`), or GP1 notice alongside your post, third parties downloading the image remain legally bound by your GP1 attribution and AI opt-out terms.
 </details>

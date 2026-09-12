@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The GP1 License</title>
+  <meta name="description" content="GP1 is a creator-first copyright license for digital photography: open non-commercial sharing, fair commercial attribution, explicit anti-AI scraping, and EXIF metadata protection." />
+  <link rel="icon" type="image/png" href="GP1_logo.png" />
+  <link rel="apple-touch-icon" href="GP1_logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <noscript><style>.hero-note { opacity: 1; }</style></noscript>
+</head>
+<body>
+
+  <header class="site">
+    <div class="container">
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#pillars">Pillars</a>
+        <a href="#generator">Generator</a>
+        <a href="#matrix">Summary</a>
+        <a href="#faq">FAQ</a>
+        <a href="#full-license">Full License</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="tagline">A lightweight, creator-first permission model for digital photography.<br><br>Built for open sharing, structured attribution, and explicit protection against unauthorized AI dataset scraping.</p>
+        <p class="hero-note"><strong>Psst! :)</strong><br>Need to tag your own images? Scroll down to the <a href="#generator">Tag Generator</a> to produce ready-to-use ExifTool commands, JSON-LD schema, and credit snippets in seconds</p>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="section s-green" id="pillars">
+      <div class="container">
+
+        <h2>What GP1 stands for</h2>
+        <p class="lead">Four simple principles define the license, balancing open exchange with firm protection for the photographer:</p>
+        <div class="pillars">
+          <article class="pillar">
+            <div class="num">01</div>
+            <div class="body">
+              <h3>Open Non-Commercial</h3>
+              <p>Share and adapt freely with optional upfront credit, or add credit within 14 days if the photographer requests it.</p>
+            </div>
+          </article>
+          <article class="pillar">
+            <div class="num">02</div>
+            <div class="body">
+              <h3>Fair Commercial Use</h3>
+              <p>No licensing fees required. Commercial use is permitted in exchange for clear, visible attribution.</p>
+            </div>
+          </article>
+          <article class="pillar">
+            <div class="num">03</div>
+            <div class="body">
+              <h3>Explicit Anti-AI Scraping</h3>
+              <p>Strictly prohibits scraping or dataset training for generative AI models without separate written consent.</p>
+            </div>
+          </article>
+          <article class="pillar">
+            <div class="num">04</div>
+            <div class="body">
+              <h3>Anti-Metadata Stripping</h3>
+              <p>Platforms must preserve EXIF data; social handle tagging (<code>@handle</code>) counts as valid credit.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GENERATOR -->
+    <section class="section s-amber" id="generator">
+      <div class="container">
+
+        <h2>Tag &amp; EXIF Generator</h2>
+        <p class="lead">Enter your details to get instant, copy-paste tags for embedding rights into your images and web pages!</p>
+        <div class="generator">
+          <form class="gen-form" id="gen-form" onsubmit="return false;">
+            <div class="field">
+              <label for="creator">Creator Name</label>
+              <input id="creator" type="text" placeholder="Your Name" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label for="url">Portfolio / Website URL</label>
+              <input id="url" type="text" placeholder="https://your-website.org" autocomplete="url" />
+            </div>
+            <div class="field">
+              <label for="handle">Social Media Handle</label>
+              <input id="handle" type="text" placeholder="@social_username" />
+            </div>
+          </form>
+
+          <div class="gen-outputs">
+            <div class="output-block">
+              <div class="output-head">
+                <h4>ExifTool Command</h4>
+                <button class="copy-btn" data-target="out-exif">Copy</button>
+              </div>
+              <pre id="out-exif"></pre>
+            </div>
+            <div class="output-block">
+              <div class="output-head">
+                <h4>JSON-LD Schema (Web &lt;head&gt;)</h4>
+                <button class="copy-btn" data-target="out-jsonld">Copy</button>
+              </div>
+              <pre id="out-jsonld"></pre>
+            </div>
+            <div class="output-block">
+              <div class="output-head">
+                <h4>Social / Markdown Snippet</h4>
+                <button class="copy-btn" data-target="out-md">Copy</button>
+              </div>
+              <pre id="out-md"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUMMARY -->
+    <section class="section s-lavender" id="matrix">
+      <div class="container">
+
+        <h2>Quick terms at a glance</h2>
+        <p class="lead">A quick reference for what each use case permits under <strong>General Photography v1</strong>.</p>
+        <div class="matrix-wrap">
+          <table class="matrix">
+            <thead>
+              <tr><th>Use Case</th><th>Status</th><th>Attribution</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="use">Non-Commercial Use</td>
+                <td class="matrix-status"><span class="matrix-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2C4A3E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span></td>
+                <td>Optional upfront; credit on request within 14 days</td>
+              </tr>
+              <tr>
+                <td class="use">Commercial Use</td>
+                <td class="matrix-status"><span class="matrix-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#8a6d1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span></td>
+                <td>Mandatory, clear &amp; visible credit</td>
+              </tr>
+              <tr>
+                <td class="use">Generative AI / Data Mining</td>
+                <td class="matrix-status"><span class="matrix-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#8a3a3a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M6 18L18 6"/></svg></span></td>
+                <td>Requires separate written license</td>
+              </tr>
+              <tr>
+                <td class="use">NSFW / Explicit Content</td>
+                <td class="matrix-status"><span class="matrix-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2a2a26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M7 7l10 10"/></svg></span></td>
+                <td>No rights granted under GP1!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section s-rose" id="faq">
+      <div class="container">
+
+        <h2>Questions, answered</h2>
+        <div class="faq-list">
+          <h3 class="faq-group">For Photographers (Licensors)</h3>
+          <details class="faq">
+            <summary>Why does GP1 ban NSFW and adult content?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">The author of the GP1 License maintains a strict personal and policy stance against explicit media. GP1 was intentionally built from the ground up as a general-purpose, non-explicit framework. Applying a GP1 tag to adult or NSFW content invalidates the license entirely, leaving that content legally unlicensed under this framework.</div>
+          </details>
+          <details class="faq">
+            <summary>Can I revoke a GP1 license after publishing a photo?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">No. Like most open-source and Creative Commons licenses, GP1 permissions are irrevocable once granted for a specific version of a file. However, if a user breaches the terms (e.g., using it commercially without attribution or training an AI model), their rights automatically terminate under Section 2.4.</div>
+          </details>
+          <details class="faq">
+            <summary>Does GP1 cover model releases or private property permissions?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">No. GP1 only grants permissions regarding <strong>copyright ownership</strong> of the photograph itself. If your image features recognizable faces or private property, you are still responsible for obtaining any necessary model or location releases required by local laws.</div>
+          </details>
+          <details class="faq">
+            <summary>How do I prove ownership if someone strips my EXIF metadata?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">Keep your unedited RAW files, original un-cropped camera exports, and git commit history. These serve as digital proof of ownership if a dispute arises.</div>
+          </details>
+          <details class="faq">
+            <summary>Can I dual-license my work under GP1 and another license?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">Yes. As the copyright holder, you can offer your work under multiple licenses simultaneously (e.g., offering GP1 publicly while selling an exclusive, attribution-free commercial license to a client).</div>
+          </details>
+
+          <h3 class="faq-group">For Image Users (Licensees)</h3>
+          <details class="faq">
+            <summary>What counts as "Commercial Use"?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">Commercial use includes any application intended for commercial advantage or monetary compensation. This includes corporate websites, paid advertising, monetized YouTube videos, merchandise, printed materials for sale, or monetized blogs.</div>
+          </details>
+          <details class="faq">
+            <summary>Does tagging the photographer on Instagram or X satisfy attribution?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">Yes. Under Section 1.3, tagging the photographer's official social handle in the image tag, post caption, or credit line satisfies all attribution requirements for social platforms.</div>
+          </details>
+          <details class="faq">
+            <summary>What happens if I forget to credit a photo used non-commercially?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">For non-commercial use, upfront credit is suggested but optional. However, if the photographer contacts you requesting credit, you have <strong>14 calendar days</strong> to add clear attribution before you are considered in breach of the license.</div>
+          </details>
+          <details class="faq">
+            <summary>Can I re-sell GP1 photos on stock photo sites?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">No. While commercial use is allowed with attribution, re-selling standalone, un-adapted copies of GP1 photos on stock platforms or print-on-demand services without significant creative transformation misrepresents licensing terms and violates creator rights.</div>
+          </details>
+
+          <h3 class="faq-group">Artificial Intelligence &amp; Metadata</h3>
+          <details class="faq">
+            <summary>Why does GP1 prohibit AI data mining by default?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">Standard legacy licenses (like Creative Commons v4.0) were written before generative AI web-scraping existed. GP1 explicitly protects creators by requiring explicit written consent before any image can be ingested into machine learning datasets.</div>
+          </details>
+          <details class="faq">
+            <summary>What should I do if a web platform automatically strips EXIF metadata?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">If a platform strips metadata upon upload, ensure you provide visible attribution in the post text, caption, or page footer to remain compliant with Section 2.3.</div>
+          </details>
+          <details class="faq">
+            <summary>What happens if a platform's Terms of Service conflicts with GP1?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">When you upload content to a platform, your direct user agreement with that platform governs how the platform itself operates. GP1 governs third-party users and scrapers who access, download, or attempt to re-use your work. While GP1 cannot override a platform ToS you directly agreed to, it prevents external companies and scrapers from taking your work off that platform for unauthorized AI training or commercial use.</div>
+          </details>
+          <details class="faq">
+            <summary>Am I protected if I upload a GP1 photo to a site that strips EXIF data?<span class="chev"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></summary>
+            <div class="answer">Yes. Section 2.3 explicitly exempts standard automated processing by host platforms. As long as you include a caption link, profile handle (<code>@handle</code>), or GP1 notice alongside your post, third parties downloading the image remain legally bound by your GP1 attribution and AI opt-out terms.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL LICENSE -->
+    <section class="section s-blue" id="full-license">
+      <div class="container">
+
+        <h2>Read the entire GP1 License</h2>
+        <p class="lead">The complete, authoritative text of the General Photography v1 License.</p>
+        <article class="license-doc">
+          <h3>General Photography v1 (GP1) License</h3>
+          <hr class="divider" />
+
+          <h4>1. Terms &amp; Permissions</h4>
+
+          <p><strong>1.1 Non-Commercial Use</strong></p>
+          <ul>
+            <li><strong>Permission:</strong> You may freely copy, distribute, display, and adapt this image for non-commercial purposes without mandatory upfront credit.</li>
+            <li><strong>Attribution:</strong> Upfront attribution is kindly suggested but not strictly required.</li>
+            <li><strong>Credit Upon Request:</strong> If the copyright holder (<em>"Licensor"</em>) delivers a written request for attribution, you (<em>"Licensee"</em>) agree to add clear, reasonable credit (e.g., photographer name, social handle, or portfolio link) within <strong>14 calendar days</strong> of notification.</li>
+          </ul>
+
+          <p><strong>1.2 Commercial Use</strong></p>
+          <ul>
+            <li><strong>Permission:</strong> You may use, integrate, and display this image for commercial projects, products, or marketing materials.</li>
+            <li><strong>Mandatory Attribution:</strong> Commercial use requires clear and visible credit to the photographer (e.g., in the caption, credits section, metadata, or accompanying documentation).</li>
+            <li><strong>Financial Support:</strong> Direct licensing fees are not required, though voluntary donations or compensation to the creator are encouraged.</li>
+          </ul>
+
+          <p><strong>1.3 Social Media Attribution</strong></p>
+          <p>On digital and social platforms (e.g., Instagram, X, Threads, Mastodon), tagging the creator's official handle or linking directly to their profile within the post caption or image tag satisfies all attribution requirements.</p>
+
+          <hr class="divider" />
+
+          <h4>2. Scope &amp; Restrictions</h4>
+
+          <p><strong>2.1 Content Eligibility</strong></p>
+          <p>This license is intended <strong>exclusively for general, non-explicit media</strong>.</p>
+          <ul>
+            <li><strong>Prohibited Application:</strong> This license <strong>cannot</strong> be applied to NSFW, sexually explicit, or adult content.</li>
+            <li><strong>Invalid Licensing:</strong> Any explicit content published or distributed under a GP1 tag is automatically deemed <strong>unlicensed</strong>, and no rights under GP1 are granted.</li>
+          </ul>
+
+          <p><strong>2.2 Generative AI &amp; Data Mining Prohibition</strong></p>
+          <p>This license explicitly <strong>prohibits</strong> the use of the licensed work for automated data scraping, text and data mining (TDM), machine learning model training, or inclusion in training datasets for generative AI models without an explicit, separate written license from the Licensor.</p>
+
+          <p><strong>2.3 Metadata Preservation &amp; Platform Processing</strong></p>
+          <p>Licensees and distributing platforms must make reasonable efforts to preserve embedded copyright EXIF/IPTC metadata.</p>
+          <ul>
+            <li><strong>Platform Processing Exemption:</strong> Automatic metadata stripping or image compression performed natively by hosting or social media platforms during user-initiated uploads does not constitute a license breach, provided the Licensor maintains visible external attribution (such as post captions, profile links, or watermarks).</li>
+            <li><strong>Third-Party Stripping:</strong> Intentionally stripping metadata during downstream redistribution or scraping without providing external credit revokes all rights granted under this license.</li>
+          </ul>
+
+          <p><strong>2.4 Termination</strong></p>
+          <p>Any failure to comply with the terms of this license (including unauthorized AI training, stripped metadata, non-attribution in commercial contexts, or failing to fulfill an attribution request within 14 days) automatically terminates all rights granted under this license. Upon termination, you must cease all use and distribution of the image.</p>
+
+          <hr class="divider" />
+
+          <h4>3. Disclaimer of Warranty &amp; Limitation of Liability</h4>
+          <p>THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.</p>
+          <p>IN NO EVENT SHALL THE COPYRIGHT HOLDER OR AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORK OR THE USE OR OTHER DEALINGS IN THE WORK (INCLUDING, BUT NOT LIMITED TO, LACK OF MODEL RELEASES OR PROPERTY RELEASES).</p>
+
+          <hr class="divider" />
+          <p class="closing">GP1 License // Designed for open creative exchange</p>
+        </article>
+
+        <div class="footer-buttons">
+          <a href="https://github.com/Hiburger/gp1-license" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          <a href="mailto:contact@olynthe.org" class="btn btn-secondary">Contact</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      var REPO = "https://github.com/Hiburger/gp1-license";
+      var els = {
+        creator: document.getElementById("creator"),
+        url: document.getElementById("url"),
+        handle: document.getElementById("handle"),
+        exif: document.getElementById("out-exif"),
+        jsonld: document.getElementById("out-jsonld"),
+        md: document.getElementById("out-md")
+      };
+
+      function val(field, fallback) {
+        var v = field.value.trim();
+        return v ? v : fallback;
+      }
+
+      function render() {
+        var name = val(els.creator, "[Your Name]");
+        var url = val(els.url, "https://example.com");
+        var handle = val(els.handle, "@handle");
+
+        // ExifTool
+        function cliEscape(s) { return s.replace(/"/g, '\\"'); }
+        var cliName = cliEscape(name);
+        var cliUrl = cliEscape(url);
+        var exif = 'exiftool ' +
+          '-Copyright="GP1 License (' + REPO + ')" ' +
+          '-Artist="' + cliName + '" ' +
+          '-XMP-iptcCore:CreatorWorkURL="' + cliUrl + '" ' +
+          '-XMP-dc:Rights="GP1 License - No AI Scraping | Credit Required" ' +
+          '-overwrite_original image.jpg';
+        els.exif.textContent = exif;
+
+        // JSON-LD schema
+        var ld = {
+          "@context": "https://schema.org",
+          "@type": "ImageObject",
+          "license": REPO,
+          "acquireLicensePage": url,
+          "creditText": name + (handle && handle !== "@handle" ? " (" + handle + ")" : ""),
+          "creator": {
+            "@type": "Person",
+            "name": name,
+            "url": url
+          },
+          "copyrightNotice": "GP1 License",
+          "usageInfo": "No AI scraping or dataset training permitted without separate written consent.",
+          "isAccessibleForFree": true
+        };
+        var ldJson = JSON.stringify(ld, null, 2);
+        els.jsonld.textContent = '<script type="application/ld+json">\n' + ldJson + '\n<\/script>';
+
+        // Markdown / social snippet
+        var credit = name;
+        if (handle && handle !== "@handle") credit = credit + " (" + handle + ")";
+        var md = 'Licensed under [GP1](' + REPO + ') - No AI Scraping | Credit Required\n' +
+                 'Photo by ' + credit + (url && url !== "https://example.com" ? " - " + url : "");
+        els.md.textContent = md;
+      }
+
+      function wireCopy() {
+        document.querySelectorAll(".copy-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var target = document.getElementById(btn.getAttribute("data-target"));
+            var text = target.textContent;
+            var done = function () {
+              var originalText = btn.textContent;
+              btn.classList.add("copied");
+              btn.textContent = "Copied!";
+              setTimeout(function () {
+                btn.classList.remove("copied");
+                btn.textContent = originalText;
+              }, 1400);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(text).then(done).catch(function () {
+                legacyCopy(text); done();
+              });
+            } else {
+              legacyCopy(text); done();
+            }
+          });
+        });
+      }
+
+      function legacyCopy(text) {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+
+      [els.creator, els.url, els.handle].forEach(function (field) {
+        field.addEventListener("input", render);
+      });
+
+      render();
+      wireCopy();
+    })();
+
+    (function () {
+      function typewriter(el, speed, callback) {
+        var html = el.innerHTML;
+        var tokens = [];
+        var re = /(<br\s*\/?>)/gi;
+        var lastIndex = 0;
+        var match;
+        while ((match = re.exec(html)) !== null) {
+          if (match.index > lastIndex) {
+            tokens.push({ type: "text", value: html.slice(lastIndex, match.index) });
+          }
+          tokens.push({ type: "br" });
+          lastIndex = re.lastIndex;
+        }
+        if (lastIndex < html.length) {
+          tokens.push({ type: "text", value: html.slice(lastIndex) });
+        }
+
+        var allWords = [];
+        tokens.forEach(function (tok) {
+          if (tok.type === "br") {
+            allWords.push({ text: "", brOnly: true });
+          } else {
+            var ws = tok.value.trim().split(/\s+/);
+            ws.forEach(function (w) {
+              if (w) allWords.push({ text: w, brOnly: false });
+            });
+          }
+        });
+
+        el.innerHTML = "";
+        el.style.visibility = "visible";
+
+        function buildHtml(upTo) {
+          var out = "";
+          for (var j = 0; j <= upTo; j++) {
+            if (allWords[j].brOnly) {
+              out += "<br>";
+            } else {
+              out += allWords[j].text;
+              if (j < upTo) {
+                if (allWords[j + 1] && !allWords[j + 1].brOnly) out += " ";
+              }
+            }
+          }
+          out += " ";
+          return out;
+        }
+        var i = 0;
+        function next() {
+          if (i < allWords.length) {
+            if (!allWords[i].brOnly) {
+              el.innerHTML = buildHtml(i);
+            }
+            i++;
+            setTimeout(next, speed);
+          } else {
+            el.innerHTML = allWords.map(function (w) {
+              return w.brOnly ? "<br>" : w.text;
+            }).reduce(function (acc, part, idx, arr) {
+              if (idx > 0 && !arr[idx - 1].startsWith("<br") && !part.startsWith("<br")) {
+                return acc + " " + part;
+              }
+              return acc + part;
+            }, "");
+            if (callback) callback();
+          }
+        }
+        next();
+      }
+
+      var tagline = document.querySelector(".hero .tagline");
+      var note = document.querySelector(".hero-note");
+      if (!tagline || !note) return;
+
+      note.classList.remove("visible");
+      tagline.style.visibility = "hidden";
+
+      function start() {
+        typewriter(tagline, 150, function () {
+          setTimeout(function () { note.classList.add("visible"); }, 1000);
+        });
+      }
+      if (document.readyState === "complete") start();
+      else window.addEventListener("load", start);
+    })();
+  </script>
+</body>
+</html>

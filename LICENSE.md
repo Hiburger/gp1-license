@@ -1,7 +1,5 @@
 # General Photography v1 (GP1) License
 
-> Welcome ! The General Photography v1 (GP1) License is an open, lightweight permission model designed for creators sharing digital photography and visual art.
-
 ---
 
 ## 1. Terms & Permissions
@@ -32,8 +30,11 @@ This license is intended **exclusively for general, non-explicit media**.
 ### 2.2 Generative AI & Data Mining Prohibition
 This license explicitly **prohibits** the use of the licensed work for automated data scraping, text and data mining (TDM), machine learning model training, or inclusion in training datasets for generative AI models without an explicit, separate written license from the Licensor. 
 
-### 2.3 Metadata Preservation
-Licensees and distributing platforms must make reasonable efforts to preserve embedded copyright EXIF/IPTC metadata. Intentionally stripping or wiping metadata without providing clear external attribution revokes the rights granted under this license.
+### 2.3 Metadata Preservation & Platform Processing
+Licensees and distributing platforms must make reasonable efforts to preserve embedded copyright EXIF/IPTC metadata. 
+
+* **Platform Processing Exemption:** Automatic metadata stripping or image compression performed natively by hosting or social media platforms during user-initiated uploads does not constitute a license breach, provided the Licensor maintains visible external attribution (such as post captions, profile links, or watermarks).
+* **Third-Party Stripping:** Intentionally stripping metadata during downstream redistribution or scraping without providing external credit revokes all rights granted under this license.
 
 ### 2.4 Termination
 Any failure to comply with the terms of this license (including unauthorized AI training, stripped metadata, non-attribution in commercial contexts, or failing to fulfill an attribution request within 14 days) automatically terminates all rights granted under this license. Upon termination, you must cease all use and distribution of the image.
